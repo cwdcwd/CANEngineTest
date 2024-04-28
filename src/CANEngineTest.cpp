@@ -40,7 +40,7 @@ char msgString[128];
 void setup()
 {
   // Serial.begin(115200);
-
+  pinMode(CAN0_INT, INPUT);
   // Wait 10 seconds for USB debug serial to be connected (plus 1 more)
   waitFor(Serial.isConnected, 10000);
   delay(1000);
